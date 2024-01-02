@@ -10,3 +10,8 @@ def check(seq, elem):
         return True
     else:
         return False              
+
+or
+
+def check(seq, elem):
+    return elem in seq
