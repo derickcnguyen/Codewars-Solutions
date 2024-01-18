@@ -11,3 +11,8 @@ def filter_list(l):
         if type(x) == int:
             arr.append(x)
     return arr
+
+or
+
+def filter_list(l):
+    return [i for i in l if isinstance(i,int)]
