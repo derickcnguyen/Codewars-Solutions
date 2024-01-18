@@ -11,3 +11,8 @@ def remove_every_other(my_list):
         if i % 2 == 0:
             arr.append(my_list[i])
     return arr
+
+or
+
+def remove_every_other(my_list):
+    return my_list[::2]
