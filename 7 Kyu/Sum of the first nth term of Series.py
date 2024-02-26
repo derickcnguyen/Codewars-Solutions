@@ -19,3 +19,8 @@ def series_sum(n):
     series = sum(1/(3*i+1) for i in range(n))
     result = '{:.2f}'.format(series)
     return result
+
+or
+
+def series_sum(n):
+    return '{:.2f}'.format(sum(1/(3*i+1)for i in range(n)))
