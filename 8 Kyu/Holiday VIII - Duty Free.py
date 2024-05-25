@@ -8,6 +8,5 @@ Another example: if a bottle costs £12 normally and the duty free discount is 5
 
 All inputs will be integers. Please return an integer. Round down.
 
-import math
 def duty_free(price, discount, holiday_cost):
-    return math.floor(holiday_cost/(discount*price) * 100)
+    return int(holiday_cost/(price*(discount/100)))
