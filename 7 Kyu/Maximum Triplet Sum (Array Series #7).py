@@ -29,3 +29,8 @@ Note : duplications are not included when summing , (i.e) the numbers added only
 def max_tri_sum(numbers):
     numbers = sorted(set(numbers))
     return numbers[-3] + numbers[-2] + numbers[-1]
+
+or
+
+def max_tri_sum(numbers):
+    return sum(sorted(set(numbers))[-3:])
