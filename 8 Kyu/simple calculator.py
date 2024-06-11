@@ -10,14 +10,19 @@ Example:
 calculator(1, 2, '+') => 3
 calculator(1, 2, '$') # result will be "unknown value"
 
-def calculator(x,y,op):
+def calculator(x,y,op):        
+    if not isinstance(x, (int, float)) or not isinstance(y, (int, float)):
+        return "unknown value"
+    
     if op == '+':
         return x + y
-    if op == '-':
+    elif op == '-':
         return x - y
-    if op == '*':
+    elif op == '*':
         return x * y
-    if op == '/':
+    elif op == '/':
+        if y == 0:
+            return "Division by zero error"
         return x / y
     else:
-        return 'unknown value'
+        return "unknown value"
