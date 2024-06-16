@@ -17,3 +17,8 @@ def sort_my_string(s):
         if i % 2 != 0:
             odds += e
     return (f"{evens} {odds}")
+
+or
+
+def sort_my_string(s):
+    return '{} {}'.format(s[::2], s[1::2])
