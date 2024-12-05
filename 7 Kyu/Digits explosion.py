@@ -10,3 +10,8 @@ def explode(s):
     for i in split:
         explosion += i * int(i)
     return explosion
+
+    or
+
+    def explode(s):
+    return ''.join(c * int(c) for c in s)
